@@ -42,3 +42,32 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 ```
 
+## Technologies Used
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+* ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+* ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+* ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+## Final Application
+![Video of Note Taker Application]()
+
+## Installation 
+* Download [Node.js](!https://nodejs.org/en/) 
+* Clone repository from GitHub 
+* Open terminal and install the [Inquirer package](!https://www.npmjs.com/package/inquirer), [MySQL package](!https://www.npmjs.com/package/mysql),and [Console.Table package](!https://www.npmjs.com/package/console.table).
+* To start application run <npm start>. 
+
+## Credits
+* [NPM Documentation](https://www.npmjs.com/)
+* [Inquirer Documentation](!https://www.npmjs.com/package/inquirer)
+* [MySQL package](!https://www.npmjs.com/package/mysql)
+* [Console.Table package](!https://www.npmjs.com/package/console.table)
+* [Node.js](!https://nodejs.org/en/) 
+
+## License 
+ISC License
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
