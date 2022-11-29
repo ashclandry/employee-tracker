@@ -12,7 +12,7 @@ VALUES
     ('Development Coordindator', 45000, 3), 
     ('Recruiter', 50000, 4);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
+INSERT INTO employee (first_name, last_name, role, manager_id)
 VALUES 
     ('Ashlynn', 'Landry', 1, NULL),
     ('Joshua', 'Bielenberg', 2, 2),

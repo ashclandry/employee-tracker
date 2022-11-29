@@ -56,7 +56,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 * Download [Node.js](!https://nodejs.org/en/) 
 * Clone repository from GitHub 
 * Open terminal and install the [Inquirer package](!https://www.npmjs.com/package/inquirer), [MySQL package](!https://www.npmjs.com/package/mysql),and [Console.Table package](!https://www.npmjs.com/package/console.table).
-* To start application run <npm start>. 
+* To start application run <node index.js>. 
 
 ## Credits
 * [NPM Documentation](https://www.npmjs.com/)
