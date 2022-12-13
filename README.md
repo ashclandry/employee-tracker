@@ -50,7 +50,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 * ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 ## Final Application
-![Video of Employee Tracker funcationality](https://drive.google.com/file/d/1kj7mUKIb2y-9062ZUxdow7LhG4j2S-hP/view?usp=sharing)
+[Video of Employee Tracker funcationality](https://drive.google.com/file/d/1kj7mUKIb2y-9062ZUxdow7LhG4j2S-hP/view?usp=sharing)
 
 ## Installation 
 * Download [Node.js](!https://nodejs.org/en/) 
