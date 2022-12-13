@@ -1,17 +1,17 @@
 // importing packages
 const consoleTable = require('console.table');
 const inquirer = require('inquirer');
-const mySql = require('mysql2');
+const mysql = require('mysql2');
 
 // access to .env var
 require('dotenv').config();
 
 // console log connection err 
-const connection = mySql.createConnection({
-    host: 'localhost',
-    user: '',
-    password: '',
-    database: 'employee_db'
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE
 });
 
 connection.connect(err => {
@@ -22,12 +22,18 @@ connection.connect(err => {
 
 // console log connection picture when successful
 successfulConnection = () => {
-    console.log('********************************')
-    console.log('*                              *')
-    console.log('*        EMPLOYEE MANAGER      *')
-    console.log('*                              *')
-    console.log('********************************')
-    initialPrompt();
+  console.log(".------------------------------------------------.")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log("| *  *  *  *  *  EMPLOYEE MANAGER  *  *  *  *  * |")
+  console.log(".------------------------------------------------.")
+  initialPrompt();
 }
 
 // initial inquirer prompt
@@ -46,8 +52,8 @@ const initialPrompt = () => {
                 'View All Departments', 
                 'Add Department', 
                 'Quit',
-            ],
-        },
+            ]
+        }
     ])
     .then((answers) => {
         const { choices } = answers; 
@@ -272,7 +278,7 @@ showRoles = () => {
     connection.promise().query(sql, (err, rows) => {
       if (err) throw err; 
       console.table(rows); 
-      promptUser();
+      initialPrompt();
     })
 };
 
@@ -297,7 +303,7 @@ addRole = () => {
         name: 'salary',
         message: "What is the salary of this role?",
         validate: addSalary => {
-          if (isNAN(addSalary)) {
+          if (addSalary) {
               return true;
           } else {
               console.log('Please enter a salary');
@@ -351,7 +357,7 @@ showDepartments = () => {
     connection.promise().query(sql, (err, rows) => {
       if (err) throw err;
       console.table(rows);
-      promptUser();
+      initialPrompt();
     });
 };
 
