@@ -5,6 +5,8 @@
 ## Description
 The purpose of this repository is to build a command-line application to manage a company's employee database using Node.js, Inquirer, and MySQL.
 
+[Video of Employee Tracker funcationality](https://drive.google.com/file/d/1kj7mUKIb2y-9062ZUxdow7LhG4j2S-hP/view?usp=sharing)
+
 ## Table of Contents 
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
